@@ -1,0 +1,42 @@
+# -*- coding: utf-8 -*-
+import random
+
+zufallsantworten = ["Jaja", "Ich check", "Okay, wenn du nicht willst dann lass", "Reicht jetzt auch, ne?"]
+
+reaktionsantworten = {
+    "hallo": "aber Hallo",
+    "geht": "Was verstehst du darunter?",
+    "essen": "Ich bin sinnlos :(",
+    "lernen": "Ich bin ein Bot",
+    "mathe": "1+1=11"
+}
+
+print("Hey")
+print("Worüber würden Sie gerne heute sprechen?")
+print("Zum Beenden einfach 'bye' eintippen")
+print("")
+
+nutzereingabe = ""
+
+while nutzereingabe != "bye":
+    nutzereingabe = ""
+
+    while nutzereingabe == "":
+        nutzereingabe = input("Ihre Frage/Antwort: ")
+
+    nutzereingabe = nutzereingabe.lower()
+    nutzerwoerter = nutzereingabe.split()
+
+    intelligenteAntworten = False
+
+    for wort in nutzerwoerter:
+        if wort in reaktionsantworten:
+            print(reaktionsantworten[wort])
+            intelligenteAntworten = True
+
+    if not intelligenteAntworten:
+        print(random.choice(zufallsantworten))
+
+    print("")
+
+print("Gern geschehen und auf Wiedersehen")
