@@ -32,7 +32,7 @@ while nutzereingabe != "bye" :
     if einzelwoerter in reaktionsantworten:
       print(reaktionsantworten[einzelwoerter])
       intelligenteAntworten = True
-  if intelligenteAntworten == False:
+  if intelligenteAntworten = False:
     print(random.choice(zufallsantworten))
 
   print("")
