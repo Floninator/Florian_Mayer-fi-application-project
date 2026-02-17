@@ -31,7 +31,7 @@ while nutzereingabe != "bye" :
   for einzelwoerter in nutzerwoerter:
     if einzelwoerter in reaktionsantworten:
       print(reaktionsantworten[einzelwoerter])
-      intelligentAntworten = True
+      intelligenteAntworten = True
   if intelligenteAntworten == False:
     print(random.choice(zufallsantworten))
 
