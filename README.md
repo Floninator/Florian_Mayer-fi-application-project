@@ -9,7 +9,7 @@ reaktionsantworten = {"hallo": "aber Hallo",
                       "hobbys": "Sport, Musik produzieren und Klavier spielen, Reisen und natürlich programmieren lernen:)",
                       "schätzt": "Freundlichkeit :)",
                       "funktionierst": "Ich bin ein Python Projekt mit folgenden Funktionen: Verarbeitung von Nutzereingaben, Erkennung von Schlüsselwörtern und individuelle Reaktionen, zufällige Antworten durch 'random' und Dictionary, Nutzung von while-Schleifen.", 
-                      "Funktionen": "Ich bin ein Python Projekt mit folgenden Funktionen: Verarbeitung von Nutzereingaben, Erkennung von Schlüsselwörtern und individuelle Reaktionen, zufällige Antworten durch \"random\" und Dictionary, Nutzung von while-Schleifen.",
+                      "funktionen": "Ich bin ein Python Projekt mit folgenden Funktionen: Verarbeitung von Nutzereingaben, Erkennung von Schlüsselwörtern und individuelle Reaktionen, zufällige Antworten durch \"random\" und Dictionary, Nutzung von while-Schleifen.",
                       "danke": "gerne"}
 print("Dieses Projekt entstand zur Vorbereitung auf eine Ausbildung zum Anwendungsentwickler. Es zeigt meinen Einstieg in die Programmierung, sowie meine Motivation, mir IT-Kenntnisse eigenständig anzueignen. Dieses Projekt befindet sich bewusst im Aufbau, da es hier um den Lernprozess geht und nicht um fertige Projekte.")                      
 print("Hey")
@@ -32,7 +32,9 @@ while nutzereingabe != "bye" :
     if einzelwoerter in reaktionsantworten:
       print(reaktionsantworten[einzelwoerter])
       intelligenteAntworten = True
-  if intelligenteAntworten = False:
+      break
+      
+  if intelligenteAntworten == False:
     print(random.choice(zufallsantworten))
 
   print("")
